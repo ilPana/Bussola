@@ -1,0 +1,105 @@
+* { box-sizing: border-box }
+body { margin: 0; background: #f3f5f2; color: #202c29; font: 16px system-ui, sans-serif }
+.frame { max-width: 1160px; margin-inline: auto; padding-inline: 24px }
+.top { background: #15382e; color: #fff; padding-block: 18px }
+.wordmark { font-weight: 750; letter-spacing: .03em }
+.wordmark span { color: #a7dbbd; margin-inline-end: 8px }
+main { padding-block: 36px 64px }
+h1 { margin: 0; font-size: clamp(29px, 5vw, 42px); letter-spacing: -.035em }
+.heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 22px }
+.heading p { color: #52635b; margin: 8px 0 0 }
+button, select, input { font: inherit; color: inherit; border: 1px solid #aebeb6; border-radius: 6px; padding: 9px 12px; background: #fff }
+button { cursor: pointer }
+button:hover { background: #e5eee7 }
+:focus-visible { outline: 3px solid #267450; outline-offset: 3px }
+button:disabled { opacity: .6; cursor: default }
+.primary { background: #176445; color: #fff; border-color: #176445; font-weight: 650 }
+.primary:hover { background: #124e37 }
+.panel, fieldset { background: #fff; border: 1px solid #d5dfd8; border-radius: 10px }
+.filter { padding: 18px; display: grid; gap: 6px; justify-items: start }
+.filter input { width: min(100%, 340px) }
+label { font-weight: 600; font-size: .9rem }
+.table-scroll { overflow-x: auto }
+table { width: 100%; border-collapse: collapse; text-align: left; white-space: nowrap }
+th, td { padding: 12px 18px; border-top: 1px solid #e0e8e2 }
+th { background: #edf4ef; font-size: .9rem }
+.person, .back { border: 0; background: transparent; padding: 3px 0; color: #175b3e; font-weight: 650; text-decoration: underline; text-underline-offset: 3px }
+.back { margin-bottom: 14px }
+.message { padding: 0 18px 12px }
+.form { max-width: 920px }
+fieldset { margin: 20px 0; padding: 16px; min-width: 0 }
+legend { padding-inline: 8px; font-size: 1.05rem; font-weight: 700 }
+.fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 235px), 1fr)); gap: 16px }
+.field { display: grid; gap: 5px; align-content: start; min-width: 0 }
+.field input, .field select { width: 100% }
+input[readonly] { background: #edf1ed }
+[aria-invalid="true"] { border-color: #9e3326 }
+.error { color: #9e3326 }
+.notice { color: #154e35; background: #e2efe7; padding: 10px 12px; border-radius: 6px }
+.form-actions { display: flex; gap: 10px }
+.navigation, .review-toolbar { display: flex; gap: 12px; align-items: center; flex-wrap: wrap }
+.navigation { justify-content: space-between }
+.navigation nav { display: flex; gap: 6px }
+.navigation button { background: transparent; color: white; border-color: transparent }
+.navigation button:hover, .navigation [aria-current] { background: #275b48; border-color: #709583 }
+.review-toolbar { margin-block: 16px }
+.review-panel { margin-block: 18px; padding: 18px }
+.review-panel h2 { margin-top: 0 }
+.participants { list-style: none; padding: 0; margin-bottom: 0 }
+.participants li { margin-block: 8px }
+.participants input { margin-inline-end: 8px }
+.left-team { display: block; color: #52635b }
+dt { color: #52635b }
+dd { margin: 4px 0 0; font-weight: 600 }
+.actions-section { border-top: 1px solid #d5dfd8; margin-top: 24px; padding-top: 16px }
+.action-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap }
+.action-heading h3, .action-heading h4 { margin: 0 }
+.action-card { margin-block: 14px; padding: 16px; border: 1px solid #d5dfd8; border-radius: 8px; background: #f7faf7 }
+.action-state { background: #e2efe7; color: #154e35; border-radius: 16px; padding: 4px 11px; font-size: .9rem; font-weight: 600 }
+.action-card label { display: grid; gap: 5px; align-content: start; min-width: 0 }
+.action-card select, .action-card input { width: 100%; min-width: 0 }
+.action-card textarea { font: inherit; border: 1px solid #aebeb6; border-radius: 6px; padding: 9px 12px; width: 100%; resize: vertical }
+.action-card fieldset { margin: 0 0 16px }
+.action-fields { margin-block: 12px }
+.action-card details { margin-bottom: 12px }
+.action-history h5 { margin: 16px 0 6px; font-size: .95rem }
+.action-history ol { margin: 0; padding-left: 22px }
+.action-history li { padding-block: 4px }
+.status-form { display: flex; align-items: end; gap: 10px; flex-wrap: wrap; margin-top: 16px }
+.proposal { white-space: pre-wrap; overflow-wrap: anywhere }
+.navigation nav { flex-wrap: wrap }
+.mapping-filters { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin-block: 16px }
+.mapping-filters label, .catalog-form label, .mapping-dialog label { display: grid; gap: 5px }
+.mapping-people { grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); align-items: start }
+.mapping-people .review-panel { margin-block: 0 }
+.mapping-entries { list-style: none; margin: 0; padding: 0 }
+.mapping-entries li { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-block: 9px; border-bottom: 1px solid #e1e8e3 }
+.mapping-entries small, .table-scroll th small { display: block; color: #52635b; font-weight: 400 }
+.mapping-badge { padding: 5px 8px; font-size: .85rem; text-align: center; white-space: nowrap }
+.mapping-level-0 { color: #434f48; background: #f1f3f1 }
+.mapping-level-1 { color: #783622; background: #f8ece7 }
+.mapping-level-2 { color: #664b0b; background: #fbf3d9 }
+.mapping-level-3 { color: #125338; background: #e5f3e9 }
+.mapping-level-4 { color: #183e64; background: #e5effa }
+.mapping-levels { margin-block: 14px }
+.catalog-grid { margin-top: 16px; gap: 24px }
+.catalog-form, .mapping-dialog form { display: grid; gap: 12px }
+.catalog-form { padding-top: 12px }
+.catalog-form h4 { margin: 0 }
+.catalog-form textarea, .mapping-dialog textarea { font: inherit; color: inherit; border: 1px solid #aebeb6; border-radius: 6px; padding: 9px 12px; resize: vertical }
+.mapping-dialog { width: min(94vw, 480px); border: 1px solid #aebeb6; border-radius: 10px; padding: 22px; color: inherit }
+.mapping-dialog::backdrop { background: #162e26a0 }
+button[aria-pressed=true] { border-color: #377455; background: #e5eee7 }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%) }
+.kpi-year-form { display: flex; flex-wrap: wrap; align-items: end; gap: 12px }
+.kpi-year-form label { display: grid; gap: 5px }
+.kpi-objectives th[scope="row"] { white-space: normal; min-width: 240px; background: white }
+.kpi-objectives td { vertical-align: top }
+.kpi-objectives td input { width: 100px }
+.kpi-objectives th input { width: min(100%, 340px) }
+.kpi-objectives th .person { display: block; margin-top: 6px }
+.kpi-objectives td small { display: block; white-space: normal; max-width: 120px }
+.kpi-comment { display: grid; gap: 6px; max-width: 780px }
+.kpi-comment textarea { font: inherit; color: inherit; border: 1px solid #aebeb6; border-radius: 6px; padding: 9px 12px; resize: vertical }
+.kpi-comment small { color: #52635b; font-weight: 400 }
+.review-toolbar output { font-weight: 750 }
